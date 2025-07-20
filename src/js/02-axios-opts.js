@@ -18,7 +18,7 @@ const API_KEY = '43173775-fc7269b10cca3a5d436001063';
 
 // const list = document.querySelector('.list');
 // axios(`https://pixabay.com/api/`, {
-//   params: {//* передаємо search params
+//   params: { //* передаємо search params
 //     key: API_KEY,
 //     q: 'cat',
 //   },
@@ -56,27 +56,27 @@ const API_KEY = '43173775-fc7269b10cca3a5d436001063';
 //     console.log(error);
 //   });
 
-const instance = axios.create({
-  baseURL: 'https://jsonplaceholder.typicode.com/',
-  headers: { Authorization: 'Bearer lalala' },
-});
+// const instance = axios.create({
+//   baseURL: 'https://jsonplaceholder.typicode.com/',
+//   headers: { Authorization: 'Bearer lalala' },
+// });
 
-instance('todos', {
-  params: {
-    _limit: 5, //* передаємо search params
-  },
-})
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// instance('todos', {
+//   params: {
+//     _limit: 5, //* передаємо search params
+//   },
+// })
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
 
-instance('users')
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// instance('users')
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
