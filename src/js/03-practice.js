@@ -72,8 +72,8 @@ function handleSubmit(event) {
     .then((res) => {
       if (res.data.length > 0) {
         const catImg = res.data[0].url; // * отримуємо URL зображення кота з відповіді бекенду
-
-        catCard.innerHTML = `//** заповнюємо картку з котом HTML рядком, який містить зображення та назву породи кота */
+        //** заповнюємо картку з котом HTML рядком, який містить зображення та назву породи кота */
+        catCard.innerHTML = `
                     <div class="card">
                         <img src="${catImg}" alt="${myBreed}" class="card-image"/>
                         <div class="card-body">
